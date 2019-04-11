@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.dsy</groupId>
-  <artifactId>microservice-parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.dsy</groupId>
+	<artifactId>microservice-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
-  <modules>
-    <module>microservice-discovery-eureka</module>
-  </modules>
+	<modules>
+		<module>microservice-config-client</module>
+		<module>microservice-config-server</module>
+		<module>microservice-config-server-encryption</module>
+		<module>microservice-consumer-movie</module>
+		<module>microservice-consumer-movie-feign</module>
+		<module>microservice-consumer-movie-feign-customizing</module>
+		<module>microservice-consumer-movie-feign-hystrix-fallback</module>
+		<module>microservice-consumer-movie-feign-hystrix-fallback-factory</module>
+		<module>microservice-consumer-movie-feign-hystrix-fallback-stream</module>
+		<module>microservice-consumer-movie-feign-logging</module>
+		<module>microservice-consumer-movie-ribbon</module>
+		<module>microservice-consumer-movie-ribbon-customizing</module>
+		<module>microservice-consumer-movie-ribbon-customizing-properties</module>
+		<module>microservice-consumer-movie-ribbon-hystrix</module>
+		<module>microservice-consumer-movie-understanding-metadata</module>
+		<module>microservice-consumer-movie-without-eureka</module>
+		<module>microservice-discovery-eureka</module>
+		<module>microservice-discovery-eureka-authenticating</module>
+		<module>microservice-discovery-eureka-ha</module>
+		<module>microservice-file-upload</module>
+		<module>microservice-gateway-zuul</module>
+		<module>microservice-gateway-zuul-aggregation</module>
+		<module>microservice-gateway-zuul-fallback</module>
+		<module>microservice-gateway-zuul-filter</module>
+		<module>microservice-hystrix-dashboard</module>
+		<module>microservice-hystrix-turbine</module>
+		<module>microservice-provider-user</module>
+		<module>microservice-provider-user-my-metadata</module>
+		<module>microservice-sidecar</module>
+		<module>microservice-simple-consumer-movie</module>
+		<module>microservice-simple-provider-user</module>
+	</modules>
 </project>

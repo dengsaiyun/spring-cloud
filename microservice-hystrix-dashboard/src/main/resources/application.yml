@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: microservice-hystrix-dashboard
+
+server:
+  port: 8030
