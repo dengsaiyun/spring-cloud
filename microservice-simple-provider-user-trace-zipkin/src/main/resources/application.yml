@@ -1,0 +1,37 @@
+server:
+  port: 8000
+  
+spring:
+  application:
+    name: microservice-simple-provider-user-trace-zipkin
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://127.0.0.1/D:/repository/database/h2/test_db
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    username: sa
+    password: sa123
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
+  
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRANCE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRANCE
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+    org.springframework.cloud.sleuth: DEBUG
+    
+management:
+  security:
+    enabled: false

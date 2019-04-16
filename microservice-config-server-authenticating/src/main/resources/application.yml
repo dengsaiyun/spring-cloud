@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:  
+          # uri: https://git.oschina.net/itmuch/spring-cloud-config-repo # 配置Git仓库的地址
+          uri: https://github.com/dengsaiyun/spring-cloud-config-repo # 配置Git仓库的地址
+          username: dengsaiyun@163.com  # Git仓库的账号
+          password:    # Git仓库的密码
+
+security:
+  basic:
+    enabled: true     # 开启基于HTTP Basic的认证
+  user:
+    name: user              # 配置登录的账号
+    password: password123   # 配置登录的密码

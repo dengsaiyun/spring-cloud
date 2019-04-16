@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: microservice-trace-zipkin-server
+    
+server:
+  port: 9411
